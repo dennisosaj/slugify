@@ -1,0 +1,65 @@
+# distribution folder
+#####################
+/dist/fonts/*
+/dist/img/*
+/dist/log/*
+/dist/uploads/*
+/dist/invoice/*
+
+# configs
+#########
+/dist/inc/class.Dbh.php
+/dist/inc/class.Config.php
+/dist/sftp-config.json
+*/*/**/sftp-config.json
+
+# data
+######
+/dist/inc/contacts.json
+/dist/inc/invoices.json
+
+
+
+# node.js
+#########
+/node_modules/*
+package-lock.json
+
+# Compiled source
+#################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+##########
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+####################
+sublime-gulp-tmp.js
+*.log
+*.sql
+*.sqlite
+*.cache
+
+# OS generated files
+####################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+/.nova/

@@ -1,0 +1,30 @@
+{
+      "name": "slugify",
+      "version": "1.0.0",
+      "main": "index.php",
+      "scripts": {
+        "clean": "gulp clean",
+        "build": "gulp build",
+        "watch": "gulp watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "Dennis Osaj",
+      "license": "UNLICENSED",
+      "devDependencies": {
+        "del": "^4.0.0",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-minify": "^3.1.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://dennisosaj@bitbucket.org/dennisosaj/slugify.git"
+      },
+      "homepage": "https://github.com/dennisosaj/slugify",
+      "description": ""
+    }
+    
