@@ -1,0 +1,12 @@
+.output {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--grey);
+    font: 400 1rem/1.8em monospace;
+    white-space: nowrap;
+    border-radius: var(--borderRadius);
+    background: var(--black);
+    box-shadow: 2px 4px 12px rgba(black, .08);
+    overflow-y: auto;
+}

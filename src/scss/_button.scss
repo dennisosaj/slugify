@@ -1,0 +1,30 @@
+.button {
+    display: inline-block;
+    padding: .875rem;
+    font: 400 1rem/1em var(--systemFont);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &.grey {
+        color: var(--black);
+        background-color: rgba(black, .08);
+        &:hover {
+            background-color: rgba(black, .1);
+        }
+    }
+    &.blue {
+        color: white;
+        background-color: var(--blue);
+        &:hover {
+            background-color: #0077ed;
+        }
+    }
+    &.full {
+        width: 100%;
+    }
+}
