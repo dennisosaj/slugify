@@ -42,15 +42,16 @@ echo "<html lang='en-US'>";
                     echo "<h2 class='mb-150'>Output</h2>";
                     echo "<div class='output'>";
                         $delimeter    = !empty($_POST["delimeter"]) ? $_POST["delimeter"] : PHP_EOL;
-                        $whitespace   = !empty($_POST["whitespace"]) ? $_POST["delimeter"] : "_";
+                        $whitespace   = !empty($_POST["whitespace"]) ? $_POST["whitespace"] : "_";
                         $raw_data_arr = explode($delimeter, $_POST["raw_data"]);
                         foreach ($raw_data_arr as $raw_data) :
-                            $slug = strip_tags($raw_data);
-                            $slug = htmlspecialchars($slug);
-                            $slug = strtolower($slug);
-                            $slug = str_replace(" ", "-", $slug);
-                            $slug = preg_replace("/[^A-Za-z0-9\-]/", "", $slug);
-                            $slug = str_replace("-", $whitespace, $slug);
+                            $slug = strip_tags($raw_data); // Remove Tags
+                            $slug = htmlspecialchars($slug); // Escape Special Chars
+                            $slug = strtolower($slug); // Lower Case
+                            $slug = preg_replace("!\s+!", " ", $slug); // Remove Tab-Stops
+                            $slug = str_replace(" ", "-", $slug); // Replace Whitespaces
+                            $slug = preg_replace("/[^A-Za-z0-9\-]/", "", $slug); // Remove Special Chars
+                            $slug = str_replace("-", $whitespace, $slug); // Replace Former Whitespaces
                             echo $slug."<br>";
                         endforeach;
                     echo "</div>";
